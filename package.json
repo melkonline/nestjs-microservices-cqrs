@@ -1,0 +1,44 @@
+{
+  "name": "@melkonline/nestjs-microservices-cqrs",
+  "version": "1.0.0",
+  "description": "NestJS Microservices CQRS - Modified CQRS module to subscribe/publish Events globally instead of locally",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prerelease": "npm run build",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melkonline/nestjs-microservices-cqrs.git"
+  },
+  "keywords": [
+    "nestjs",
+    "microservices",
+    "cqrs"
+  ],
+  "author": "Ali Babaei <alibabaei64@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melkonline/nestjs-microservices-cqrs/issues"
+  },
+  "homepage": "https://github.com/melkonline/nestjs-microservices-cqrs#readme",
+  "devDependencies": {
+    "@nestjs/common": "^7.6.7",
+    "@nestjs/core": "^7.6.7",
+    "@nestjs/cqrs": "^7.0.1",
+    "@nestjs/microservices": "^7.6.7",
+    "@nestjs/websockets": "^7.6.7",
+    "@types/node": "^14.14.22",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.6.3",
+    "typescript": "^4.1.3"
+  }
+}
