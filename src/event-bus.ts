@@ -32,7 +32,7 @@ export class EventBus<EventBase extends ISerializableEvent = ISerializableEvent>
     }
 
     private isLocal<T extends EventBase>(event: T): boolean {
-        return Reflect.getMetadata(LOCAL_EVENT_METADATA, event);
+        return Reflect.getMetadata(LOCAL_EVENT_METADATA, event.constructor);
     }
 
     private splitEventsListLocalGlobal<T extends EventBase>(events: T[]): EventSplit<T> {
