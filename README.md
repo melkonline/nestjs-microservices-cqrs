@@ -161,6 +161,6 @@ export class AppController {
 
 ## License
 
-NestJS Microservices CQRS [MIT licensed](LICENSE).
+NestJS Microservices CQRS is [MIT licensed](LICENSE).
 
 
